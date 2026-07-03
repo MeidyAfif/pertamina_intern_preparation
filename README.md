@@ -1,21 +1,21 @@
 # Training for Pertamina Intern Preparation: Fraud Detection EDA
 
-**Author:** Meidy Afif Maulana  
-**Target Role:** Data Analyst / Internal Audit Intern at Pertamina  
+**Penulis:** Meidy Afif Maulana  
+**Target Posisi:** Data Analyst / Internal Audit Intern di Pertamina  
 **Tech Stack:** Python, Pandas, NumPy, Matplotlib, Seaborn  
 
-## Project Overview
-This repository contains the Exploratory Data Analysis (EDA) phase of a financial fraud detection project. I worked on this specifically to prepare for the Pertamina Internship Program, focusing on finding anomalies and analyzing data from an internal audit perspective.
+## Ringkasan Proyek
+Repository ini berisi tahapan Exploratory Data Analysis (EDA) dari proyek deteksi fraud keuangan. Proyek ini aku kerjakan khusus sebagai persiapan untuk program magang di Pertamina, dengan fokus mencari anomali dan menganalisis data dari sudut pandang internal audit.
 
-The dataset has over 6.3 million rows of financial transaction logs recorded over 31 days.
+Dataset yang digunakan memiliki lebih dari 6,3 juta baris log transaksi keuangan yang direkam selama 31 hari.
 
-## Key Findings
-1. **Structured Modus Operandi:** 100% of the 8,213 fraud cases only used TRANSFER and CASH_OUT methods to sever tracking trails.
-2. **System Glitch Exploitation:** By calculating the balance logic, I found that fraudsters could cash out large amounts without the system reducing their original balance. 
-3. **Legacy System Failure:** The existing alarm system (isFlaggedFraud) failed to detect most of these attacks, showing that a rule-based system is no longer enough.
-4. **Active Hours:** Fraud activities peak between 02:00 AM and 04:00 AM, proving that these attacks target vulnerable monitoring hours or use automated scripts.
+## Temuan Utama
+1. **Modus Operandi Terstruktur:** 100% dari 8.213 kasus fraud hanya menggunakan metode TRANSFER dan CASH_OUT untuk memutus jejak pelacakan.
+2. **Eksploitasi Celah Sistem:** Melalui perhitungan logika saldo, aku menemukan bahwa pelaku bisa menarik uang dalam jumlah besar tanpa mengurangi saldo awal mereka di sistem.
+3. **Kegagalan Sistem Lama:** Sistem alarm bawaan (isFlaggedFraud) terbukti gagal mendeteksi mayoritas serangan ini, membuktikan bahwa sistem berbasis aturan (rule-based) saja sudah tidak memadai.
+4. **Jam Rawan Operasi:** Aktivitas fraud memuncak antara jam 02:00 sampai 04:00 pagi. Ini menunjukkan bahwa pelaku menargetkan jam-jam di mana pengawasan sedang lemah atau kemungkinan menggunakan script otomatis (bot).
 
-## Next Steps
-* Data Preprocessing and Feature Encoding.
-* Handling Imbalanced Data using SMOTE.
-* Building a Machine Learning classification model to automate fraud detection.
+## Langkah Selanjutnya
+* Melakukan Data Preprocessing dan Feature Encoding.
+* Menangani Imbalanced Data menggunakan teknik SMOTE.
+* Membangun model klasifikasi Machine Learning untuk mendeteksi fraud secara otomatis.
